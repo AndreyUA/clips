@@ -14,7 +14,7 @@ export class NavComponent implements OnInit {
   openModal($event: Event): void {
     $event.preventDefault();
 
-    this.modal.toggleModal();
+    this.modal.toggleModal('auth');
   }
 
   ngOnInit(): void {}
