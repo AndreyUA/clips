@@ -26,4 +26,8 @@ export class ModalService {
   register(id: string): void {
     this.modals.push({ id, visible: false });
   }
+
+  unregister(id: string): void {
+    this.modals = this.modals.filter((modal) => modal.id !== id);
+  }
 }
