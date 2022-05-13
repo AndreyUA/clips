@@ -3,6 +3,7 @@ import {
   OnInit,
   ContentChildren,
   AfterContentInit,
+  QueryList,
 } from '@angular/core';
 
 // Components
@@ -16,7 +17,8 @@ import { TabComponent } from 'src/app/shared/tab/tab.component';
 export class TabsContainerComponent implements OnInit, AfterContentInit {
   constructor() {}
 
-  @ContentChildren(TabComponent) tabs = {};
+  @ContentChildren(TabComponent) tabs: QueryList<TabComponent> =
+    new QueryList();
 
   ngOnInit(): void {}
 
