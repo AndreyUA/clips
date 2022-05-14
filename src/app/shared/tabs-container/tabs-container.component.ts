@@ -26,6 +26,12 @@ export class TabsContainerComponent implements OnInit, AfterContentInit {
     tab.active = true;
   }
 
+  calculateStyles(active: boolean): string {
+    return active
+      ? 'hover:text-white text-white bg-indigo-400'
+      : 'hover:text-indigo-400';
+  }
+
   ngOnInit(): void {}
 
   ngAfterContentInit(): void {
