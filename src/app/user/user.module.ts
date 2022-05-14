@@ -6,9 +6,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
 
 // Component
 import { AuthModalComponent } from 'src/app/user/auth-modal/auth-modal.component';
+import { LoginComponent } from 'src/app/user/login/login.component';
+import { RegisterComponent } from 'src/app/user/register/register.component';
 
 @NgModule({
-  declarations: [AuthModalComponent],
+  declarations: [AuthModalComponent, LoginComponent, RegisterComponent],
   imports: [CommonModule, SharedModule],
   exports: [AuthModalComponent],
 })
