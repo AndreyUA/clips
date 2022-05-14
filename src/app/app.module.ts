@@ -8,7 +8,7 @@ import { UserModule } from 'src/app/user/user.module';
 
 // Components
 import { AppComponent } from 'src/app/app.component';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from 'src/app/nav/nav.component';
 
 @NgModule({
   declarations: [AppComponent, NavComponent],

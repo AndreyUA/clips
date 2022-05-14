@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Modules
 import { SharedModule } from 'src/app/shared/shared.module';
@@ -11,7 +12,7 @@ import { RegisterComponent } from 'src/app/user/register/register.component';
 
 @NgModule({
   declarations: [AuthModalComponent, LoginComponent, RegisterComponent],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, ReactiveFormsModule],
   exports: [AuthModalComponent],
 })
 export class UserModule {}
