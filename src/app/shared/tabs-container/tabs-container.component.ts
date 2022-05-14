@@ -20,10 +20,12 @@ export class TabsContainerComponent implements OnInit, AfterContentInit {
   @ContentChildren(TabComponent) tabs: QueryList<TabComponent> =
     new QueryList();
 
-  selectTad(tab: TabComponent) {
+  selectTad(tab: TabComponent): boolean {
     this.tabs.forEach((tabComponent) => (tabComponent.active = false));
 
     tab.active = true;
+
+    return false;
   }
 
   calculateStyles(active: boolean): string {
