@@ -14,6 +14,12 @@
     You must enter a valid email.
   </p>
 
+  <!-- MIN VALUE validation -->
+  <p *ngIf="control.errors?.min" class="text-red-400">Value too low.</p>
+
+  <!-- MAX VALUE validation -->
+  <p *ngIf="control.errors?.max" class="text-red-400">Value too high.</p>
+
   <!-- MINLENGTH validation -->
   <p *ngIf="control.errors?.minlength" class="text-red-400">
     The value you inputted is
