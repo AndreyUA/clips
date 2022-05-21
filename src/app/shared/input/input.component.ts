@@ -12,6 +12,7 @@ export class InputComponent implements OnInit {
   @Input() control: FormControl = new FormControl();
   @Input() inputType: string = 'text';
   @Input() inputPlaceholder: string = '';
+  @Input() format: string = '';
 
   ngOnInit(): void {}
 }

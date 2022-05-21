@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 
 // Components
 import { ModalComponent } from 'src/app/shared/modal/modal.component';
@@ -15,7 +16,7 @@ import { InputComponent } from 'src/app/shared/input/input.component';
     TabComponent,
     InputComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, NgxMaskModule.forRoot()],
   exports: [
     ModalComponent,
     TabsContainerComponent,
